@@ -18,10 +18,10 @@
         {
             <div class="col-lg-4 col-sm-6 portfolio-item">
                 <div class="card h-100">
-                    <a href="/item"><img class="card-img-top" src="~/images/menu/@item.ImageFile" alt=""></a>
+                    <a asp-page="item" asp-route-id="@item.Id"><img asp-append-version="true" class="card-img-top" src="~/images/menu/@item.ImageFile" alt=""></a>
                     <div class="card-body">
                         <h4 class="card-title">
-                            <a class="color-main" href="#">@item.Name</a>
+                            <a class="color-main" asp-page="item" asp-route-id="@item.Id">@item.Name</a>
                         </h4>
                         <p class="card-text">@item.Summary</p>
                     </div>
